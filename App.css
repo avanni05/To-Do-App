@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 550px;
+  margin: 60px auto;
+  background-color: rgb(243, 2, 2);
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #5d5dff;
+  margin-bottom: 20px;
+}
+
+/* Input & Buttons */
+input[type="text"] {
+  width: 72%;
+  padding: 10px 12px;
+  border: 2px solid #5d5dff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3c3cff;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5d5dff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3c3cff;
+}
+
+button.edit {
+  background-color: #f9a825;
+}
+
+button.edit:hover {
+  background-color: #f57f17;
+}
+
+button.delete {
+  background-color: #e53935;
+}
+
+button.delete:hover {
+  background-color: #c62828;
+}
+
+/* Todo Items */
+.todo-item {
+  background-color: #f0f0ff;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(93, 93, 255, 0.1);
+}
+
+.todo-item.completed {
+  background-color: #d3ffd3;
+}
+
+.todo-item span {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Filter Dropdown */
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #5d5dff;
+  font-size: 15px;
+  background-color: #f8f8ff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
